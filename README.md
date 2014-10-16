@@ -6,6 +6,8 @@ FFG Star Wars Character for Acrobat
 Summary
 -------
 
+The goodies can be found in the [pub](./pub) directory.
+
 
 
 Dependencies

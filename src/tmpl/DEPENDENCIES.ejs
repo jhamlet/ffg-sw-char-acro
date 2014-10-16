@@ -1,0 +1,39 @@
+<%  var dependencies = pkg.dependencies;
+    var dependencyKeys = Object.keys(dependencies);
+    
+    if (dependencyKeys.length) {
+-%>
+
+Dependencies
+------------
+
+Installed when you run `npm install` in the package directory.
+
+<% var  fw = dependencyKeys.reduce(function (t, c) {
+            var len = c.length;
+            return len > t ? len : t;
+        }, 0),
+        deps = dependencyKeys.map(function (key) {
+            var pad = Array(fw - key.length + 1).join(" ");
+            return key + ": " + pad + dependencies[key];
+        }).join("\n");
+-%>
+~~~
+<%=deps%>
+~~~
+
+### Development Dependencies ###
+
+<% var  fw = Object.keys(pkg.devDependencies).reduce(function (t, c) {
+            var len = c.length;
+            return len > t ? len : t;
+        }, 0),
+        devDeps = Object.keys(pkg.devDependencies).map(function (key) {
+            var pad = Array(fw - key.length + 1).join(" ");
+            return key + ": " + pad + pkg.devDependencies[key];
+        }).join("\n");
+-%>
+~~~
+<%=devDeps%>
+~~~
+<% } -%>

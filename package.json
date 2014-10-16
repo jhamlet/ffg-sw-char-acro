@@ -1,0 +1,42 @@
+{
+    "name": "ffg-swchar-acro",
+    "fullname": "FFG Star Wars Character for Acrobat",
+    "description": "Custom character sheets for the Star Wars Roleplaying games.",
+    "version": "0.1.0",
+    "keywords": [],
+    "main": "./lib/index.js",
+    "dependencies": {
+        "underscore":       "1.x.x",
+        "rx":               "2.x.x"
+    },
+    "devDependencies": {
+        "mocha":            "1.x.x",
+        "should":           "3.x.x",
+        "del":              "*",
+        "gulp":             "3.x.x",
+        "gulp-util":        "*",
+        "gulp-ejs":         "0.x.x",
+        "gulp-browserify":  "0.x.x",
+        "gulp-uglify":      "1.x.x",
+        "gulp-concat":      "*"
+    },
+    "scripts": {
+        "build": "./node_modules/.bin/gulp",
+        "clobber": "./node_modules/.bin/gulp clobber",
+        "test": "./node_modules/.bin/mocha -R spec test/test-*.js"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://github.com/jhamlet/ffg-swchar-acro/raw/master/LICENSE"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/jhamlet/ffg-swchar-acro.git"
+    },
+    "bugs": {
+        "url": "http://github.com/jhamlet/ffg-swchar-acro/issues"
+    },
+    "private": true
+}

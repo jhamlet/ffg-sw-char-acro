@@ -1,0 +1,61 @@
+@font-face {
+	font-family: 'ffg-sw-symbol';
+	src:url('fonts/ffg-sw-symbol.eot?-yez0t2');
+	src:url('fonts/ffg-sw-symbol.eot?#iefix-yez0t2') format('embedded-opentype'),
+		url('fonts/ffg-sw-symbol.woff?-yez0t2') format('woff'),
+		url('fonts/ffg-sw-symbol.ttf?-yez0t2') format('truetype'),
+		url('fonts/ffg-sw-symbol.svg?-yez0t2#ffg-sw-symbol') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'ffg-sw-symbol';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-advantage:before {
+	content: "\40";
+}
+.icon-d6:before {
+	content: "\36";
+}
+.icon-d10:before {
+	content: "\30";
+}
+.icon-d12:before {
+	content: "\32";
+}
+.icon-darkpoint:before {
+	content: "\2d";
+}
+.icon-despair:before {
+	content: "\5e";
+}
+.icon-failure:before {
+	content: "\21";
+}
+.icon-lightpoint:before {
+	content: "\2b";
+}
+.icon-neutralpoint:before {
+	content: "\3d";
+}
+.icon-success:before {
+	content: "\2a";
+}
+.icon-threat:before {
+	content: "\23";
+}
+.icon-triumph:before {
+	content: "\24";
+}

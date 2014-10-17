@@ -12,7 +12,7 @@ gulp.task('clobber', function (done) {
 });
 
 gulp.task('readme.md', function () {
-    var dir = 'src/tmpl';
+    var dir = 'src/tmpl/readme';
     return gulp.
         src([
             'HEADER.ejs',

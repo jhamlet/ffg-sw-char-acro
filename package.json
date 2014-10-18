@@ -7,7 +7,7 @@
     "main": "./lib/index.js",
     "dependencies": {
         "underscore":       "1.x.x",
-        "rx":               "2.x.x"
+        "protean":          "0.2.x"
     },
     "devDependencies": {
         "mocha":            "1.x.x",
@@ -19,7 +19,6 @@
         "gulp-browserify":  "0.x.x",
         "gulp-uglify":      "1.x.x",
         "gulp-marked":      "1.x.x",
-        "gulp-svgo":        "0.x.x",
         "gulp-concat":      "*"
     },
     "scripts": {

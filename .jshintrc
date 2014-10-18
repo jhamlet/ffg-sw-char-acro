@@ -51,7 +51,10 @@
     "prototypejs"     : false,
     "rhino"           : false,
     "wsh"             : false,
-    "predef"          : [], 
+    "predef"          : [
+        "app",
+        "util"
+    ], 
     // Legacy
     "nomen"           : false,
     "onevar"          : true,

@@ -1,6 +1,8 @@
 var gulp     = require('gulp'),
     ejs      = require('gulp-ejs'),
     concat   = require('gulp-concat'),
+    marked   = require('gulp-marked'),
+    svgo     = require('gulp-svgo'),
     fs       = require('fs'),
     path     = require('path'),
     clean    = require('del'),
@@ -17,6 +19,7 @@ gulp.task('readme.md', function () {
         src([
             'HEADER.ejs',
             'SUMMARY.ejs',
+            'USAGE.ejs',
             // 'INSTALLATION.ejs',
             // 'DOCUMENTATION.ejs',
             'DEPENDENCIES.ejs',
@@ -34,5 +37,19 @@ gulp.task('readme.md', function () {
         pipe(gulp.dest('./'));
 });
 CLOBBER.push('README.md');
+
+gulp.task('readme.html', ['readme.md'], function () {
+    return gulp.src('README.md').
+        pipe(marked()).
+        pipe(concat('README.html')).
+        pipe(gulp.dest('./'));
+});
+CLOBBER.push('README.html');
+
+gulp.task('svgo', function () {
+    return gulp.src('src/svg/ffg-sw-charsheet-*.svg').
+        pipe(svgo()).
+        pipe(gulp.dest('./pub/svg'));
+});
 
 gulp.task('default', ['readme.md']);

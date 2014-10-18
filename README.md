@@ -57,33 +57,6 @@ Fill in the circle if it is a _career_ skill.
   line through the relevant boxes.
 
 
-
-Dependencies
-------------
-
-Installed when you run `npm install` in the package directory.
-
-~~~
-underscore: 1.x.x
-rx:         2.x.x
-~~~
-
-### Development Dependencies ###
-
-~~~
-mocha:           1.x.x
-should:          3.x.x
-del:             *
-gulp:            3.x.x
-gulp-util:       *
-gulp-ejs:        0.x.x
-gulp-browserify: 0.x.x
-gulp-uglify:     1.x.x
-gulp-marked:     1.x.x
-gulp-svgo:       0.x.x
-gulp-concat:     *
-~~~
-
 Report an Issue
 ---------------
 

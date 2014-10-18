@@ -22,7 +22,7 @@ gulp.task('readme.md', function () {
             'USAGE.ejs',
             // 'INSTALLATION.ejs',
             // 'DOCUMENTATION.ejs',
-            'DEPENDENCIES.ejs',
+            // 'DEPENDENCIES.ejs',
             'ISSUES.ejs',
             'LICENSE.ejs'
         ].map(function (file) { return path.join(dir, file); })).

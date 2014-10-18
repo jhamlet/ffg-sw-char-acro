@@ -1,16 +1,16 @@
 @font-face {
-	font-family: 'ffg-sw-symbol';
-	src:url('fonts/ffg-sw-symbol.eot?-yez0t2');
-	src:url('fonts/ffg-sw-symbol.eot?#iefix-yez0t2') format('embedded-opentype'),
-		url('fonts/ffg-sw-symbol.woff?-yez0t2') format('woff'),
-		url('fonts/ffg-sw-symbol.ttf?-yez0t2') format('truetype'),
-		url('fonts/ffg-sw-symbol.svg?-yez0t2#ffg-sw-symbol') format('svg');
+	font-family: 'FFG-SW-Symbol';
+	src:url('fonts/FFG-SW-Symbol.eot?7yx074');
+	src:url('fonts/FFG-SW-Symbol.eot?#iefix7yx074') format('embedded-opentype'),
+		url('fonts/FFG-SW-Symbol.woff?7yx074') format('woff'),
+		url('fonts/FFG-SW-Symbol.ttf?7yx074') format('truetype'),
+		url('fonts/FFG-SW-Symbol.svg?7yx074#FFG-SW-Symbol') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-	font-family: 'ffg-sw-symbol';
+	font-family: 'FFG-SW-Symbol';
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
@@ -23,9 +23,6 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-advantage:before {
-	content: "\40";
-}
 .icon-d6:before {
 	content: "\36";
 }
@@ -35,27 +32,30 @@
 .icon-d12:before {
 	content: "\32";
 }
-.icon-darkpoint:before {
-	content: "\2d";
-}
-.icon-despair:before {
-	content: "\5e";
-}
-.icon-failure:before {
-	content: "\21";
-}
-.icon-lightpoint:before {
-	content: "\2b";
-}
-.icon-neutralpoint:before {
-	content: "\3d";
-}
 .icon-success:before {
 	content: "\2a";
+}
+.icon-advantage:before {
+	content: "\40";
+}
+.icon-triumph:before {
+	content: "\21";
+}
+.icon-failure:before {
+	content: "\5e";
 }
 .icon-threat:before {
 	content: "\23";
 }
-.icon-triumph:before {
-	content: "\24";
+.icon-despair:before {
+	content: "\26";
+}
+.icon-neutralpoint:before {
+	content: "\3d";
+}
+.icon-lightpoint:before {
+	content: "\2b";
+}
+.icon-darkpoint:before {
+	content: "\2d";
 }

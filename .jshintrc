@@ -53,7 +53,10 @@
     "wsh"             : false,
     "predef"          : [
         "app",
-        "util"
+        "util",
+        "font",
+        "color",
+        "highlight"
     ], 
     // Legacy
     "nomen"           : false,

@@ -3,6 +3,7 @@ var gulp     = require('gulp'),
     concat   = require('gulp-concat'),
     marked   = require('gulp-marked'),
     browser  = require('gulp-browserify'),
+    uglify   = require('gulp-uglify'),
     fs       = require('fs'),
     path     = require('path'),
     clean    = require('del'),
@@ -47,8 +48,10 @@ gulp.task('readme.html', ['readme.md'], function () {
 CLOBBER.push('README.html');
 
 gulp.task('js', function () {
-    return gulp.src('./lib/ffg-sw-charsheet-aurebesh.js').
+    return gulp.src('./lib/aurebesh/form.js').
         pipe(browser()).
+        pipe(concat('ffg-sw-charsheet-aurebesh-form.js')).
+        pipe(uglify()).
         pipe(gulp.dest('./pub/js'));
 });
 

@@ -50,7 +50,15 @@ CLOBBER.push('README.html');
 gulp.task('js', function () {
     return gulp.src('./lib/aurebesh/form.js').
         pipe(browser()).
-        pipe(concat('ffg-sw-charsheet-aurebesh-batch.js')).
+        pipe(concat('aurebesh-batch.js')).
+        pipe(uglify()).
+        pipe(gulp.dest('./pub/js'));
+});
+
+gulp.task('js-debug', function () {
+    return gulp.src('./lib/aurebesh/form.js').
+        pipe(browser()).
+        pipe(concat('aurebesh-batch-debug.js')).
         pipe(uglify({ 
             mangle: false,
             output: {
@@ -58,7 +66,7 @@ gulp.task('js', function () {
                 max_line_len: 80
             }
         })).
-        pipe(gulp.dest('./pub'));
+        pipe(gulp.dest('./pub/js'));
 });
 
 gulp.task('default', ['readme.md']);

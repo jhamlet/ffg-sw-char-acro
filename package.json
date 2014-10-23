@@ -1,8 +1,8 @@
 {
     "name": "ffg-swchar-acro",
     "fullname": "FFG Star Wars Character for Acrobat",
-    "description": "Custom character sheets for the Star Wars Roleplaying games.",
-    "version": "0.1.1",
+    "description": "Custom, form-fillable, character sheets for the Star Wars Roleplaying games.",
+    "version": "0.2.0",
     "keywords": [],
     "main": "./lib/index.js",
     "dependencies": {

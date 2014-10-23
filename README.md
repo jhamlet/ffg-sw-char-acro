@@ -1,7 +1,7 @@
 FFG Star Wars Character for Acrobat
 ===================================
 
-> Custom character sheets for the Star Wars Roleplaying games.
+> Custom, form-fillable, character sheets for the Star Wars Roleplaying games.
 
 Summary
 -------

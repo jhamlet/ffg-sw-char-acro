@@ -57,7 +57,8 @@
         "font",
         "color",
         "style",
-        "highlight"
+        "highlight",
+        "zoomtype"
     ], 
     // Legacy
     "nomen"           : false,

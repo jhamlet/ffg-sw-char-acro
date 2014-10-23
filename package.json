@@ -13,6 +13,7 @@
         "mocha":            "1.x.x",
         "should":           "3.x.x",
         "del":              "*",
+        "through2":         "0.x.x",
         "gulp":             "3.x.x",
         "gulp-util":        "*",
         "gulp-ejs":         "0.x.x",

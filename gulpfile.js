@@ -55,18 +55,4 @@ gulp.task('js', function () {
         pipe(gulp.dest('./pub/js'));
 });
 
-gulp.task('js-debug', function () {
-    return gulp.src('./lib/aurebesh/form.js').
-        pipe(browser()).
-        pipe(concat('aurebesh-batch-debug.js')).
-        pipe(uglify({ 
-            mangle: false,
-            output: {
-                indent_level: 0,
-                max_line_len: 80
-            }
-        })).
-        pipe(gulp.dest('./pub/js'));
-});
-
-gulp.task('default', ['readme.md']);
+gulp.task('default', ['js', 'readme.md']);

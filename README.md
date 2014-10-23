@@ -64,7 +64,7 @@ Usage
 * Put an 'X' in the box if you have purchased that column/row of the tree.
 * For powers, and other trees where an ability spans multiple columns, put a
   line through the relevant boxes.
-* Use the _Abilites_ section to actually summarize the individual abilities that
+* Use the _Abilities_ section to actually summarize the individual abilities that
   come from purchasing the talents.
 
 

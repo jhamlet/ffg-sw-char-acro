@@ -2,7 +2,8 @@ var gulp     = require('gulp'),
     ejs      = require('gulp-ejs'),
     concat   = require('gulp-concat'),
     marked   = require('gulp-marked'),
-    svgo     = require('gulp-svgo'),
+    browser  = require('gulp-browserify'),
+    uglify   = require('gulp-uglify'),
     fs       = require('fs'),
     path     = require('path'),
     clean    = require('del'),
@@ -46,10 +47,12 @@ gulp.task('readme.html', ['readme.md'], function () {
 });
 CLOBBER.push('README.html');
 
-gulp.task('svgo', function () {
-    return gulp.src('src/svg/ffg-sw-charsheet-*.svg').
-        pipe(svgo()).
-        pipe(gulp.dest('./pub/svg'));
+gulp.task('js', function () {
+    return gulp.src('./lib/aurebesh/form.js').
+        pipe(browser()).
+        pipe(concat('aurebesh-batch.js')).
+        pipe(uglify()).
+        pipe(gulp.dest('./pub/js'));
 });
 
-gulp.task('default', ['readme.md']);
+gulp.task('default', ['js', 'readme.md']);

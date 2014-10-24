@@ -1,32 +1,44 @@
 FFG Star Wars Character for Acrobat
 ===================================
 
-> Custom character sheets for the Star Wars Roleplaying games.
+> Custom, form-fillable, character sheets for the Star Wars Roleplaying games.
 
 Summary
 -------
 
-The original gray **Edge of the Empire** styled character sheet.
+Character sheets for **Edge of the Empire**, **Age of Rebellion**, and **Force
+and Destiny**. 
 
-![EotE Gray Front](./pub/img/ffg-sw-charsheet-aurebesh-eote-gray-front.png)
-![EotE Gray Back](./pub/img/ffg-sw-charsheet-aurebesh-eote-gray-back.png)
+![EotE Gray Front](./pub/img/aurebesh-eote-g-front.png)
+![AoR Gray Front](./pub/img/aurebesh-aor-g-front.png)
+![FaD Gray Front](./pub/img/aurebesh-fad-g-front.png);
 
-**_Now in color!_**
+In **color** too!
 
-![EotE Front](./pub/img/ffg-sw-charsheet-aurebesh-eote-front.png)
-![EotE Back](./pub/img/ffg-sw-charsheet-aurebesh-eote-back.png)
+![EotE Front](./pub/img/aurebesh-eote-front.png)
+![AoR Front](./pub/img/aurebesh-aor-front.png)
+![FaD Front](./pub/img/aurebesh-fad-front.png);
 
-And new styles for **Age of Rebellion** and **Force and Destiny**.
+And now, **form fillable** in [Adobe Reader][reader].
 
-![AoR Front](./pub/img/ffg-sw-charsheet-aurebesh-aor-front.png)
-![AoR Back](./pub/img/ffg-sw-charsheet-aurebesh-aor-back.png)
+Get the goodies in the [pub](./pub) directory (_form fillable versions have a
+'-ff' at the end of the filename_).
 
-![FaD Front](./pub/img/ffg-sw-charsheet-aurebesh-fad-front.png)
-![FaD Back](./pub/img/ffg-sw-charsheet-aurebesh-fad-back.png)
+### Caveats 
 
-These also have versions in _gray_.
+> I highly recommend using the latest version of [Adobe Reader][reader] with
+> these.  Although they can be used with other PDF readers, I can not guarantee
+> that they will appear as intended, or save the form field data in the correct
+> way.
 
-Get the goodies in the [pub](./pub) directory.
+I only used form fields.
+
+There is no interactiveness to these.
+
+This was in an effort to make these as wildly useful as possible.
+
+
+[reader]: http://get.adobe.com/reader/ "Adode Reader"
 
 Usage
 -----
@@ -35,10 +47,7 @@ Usage
 
 ![Skills Usage](./pub/img/skill-usage.png)
 
-#### Skill Circle ####
-Fill in the circle if it is a _career_ skill.
-
-#### Skill Pool ####
+* Fill in the circle if it is a _career_ skill.
 * Fill the bottom triangle of the _pool_ box for each rank of a
   characteristic you have for that skill
 * Fill in the top part when you get a rank.
@@ -48,14 +57,14 @@ Fill in the circle if it is a _career_ skill.
 * _Alternatively_ you can use a slash for ability, and an opposite slash (which
   makes an 'X') to indicate ability/proficiency.
 
-![Development Tree Usage](./pub/img/development-tree-usage.png)
-
 ### Development Trees ###
+
+![Development Tree Usage](./pub/img/development-tree-usage.png)
 
 * Put an 'X' in the box if you have purchased that column/row of the tree.
 * For powers, and other trees where an ability spans multiple columns, put a
   line through the relevant boxes.
-* Use the _Abilites_ section to actually summarize the individual abilities that
+* Use the _Abilities_ section to actually summarize the individual abilities that
   come from purchasing the talents.
 
 

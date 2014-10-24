@@ -51,7 +51,15 @@
     "prototypejs"     : false,
     "rhino"           : false,
     "wsh"             : false,
-    "predef"          : [], 
+    "predef"          : [
+        "app",
+        "util",
+        "font",
+        "color",
+        "style",
+        "highlight",
+        "zoomtype"
+    ], 
     // Legacy
     "nomen"           : false,
     "onevar"          : true,

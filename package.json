@@ -1,25 +1,25 @@
 {
     "name": "ffg-swchar-acro",
     "fullname": "FFG Star Wars Character for Acrobat",
-    "description": "Custom character sheets for the Star Wars Roleplaying games.",
-    "version": "0.1.1",
+    "description": "Custom, form-fillable, character sheets for the Star Wars Roleplaying games.",
+    "version": "0.2.0",
     "keywords": [],
     "main": "./lib/index.js",
     "dependencies": {
         "underscore":       "1.x.x",
-        "rx":               "2.x.x"
+        "protean":          "0.2.x"
     },
     "devDependencies": {
         "mocha":            "1.x.x",
         "should":           "3.x.x",
         "del":              "*",
+        "through2":         "0.x.x",
         "gulp":             "3.x.x",
         "gulp-util":        "*",
         "gulp-ejs":         "0.x.x",
         "gulp-browserify":  "0.x.x",
         "gulp-uglify":      "1.x.x",
         "gulp-marked":      "1.x.x",
-        "gulp-svgo":        "0.x.x",
         "gulp-concat":      "*"
     },
     "scripts": {

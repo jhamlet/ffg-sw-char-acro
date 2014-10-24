@@ -47,7 +47,7 @@ gulp.task('readme.html', ['readme.md'], function () {
 });
 CLOBBER.push('README.html');
 
-gulp.task('js', function () {
+gulp.task('js-aurebesh', function () {
     return gulp.src('./lib/aurebesh/form.js').
         pipe(browser()).
         pipe(concat('aurebesh-batch.js')).
@@ -55,4 +55,13 @@ gulp.task('js', function () {
         pipe(gulp.dest('./pub/js'));
 });
 
+gulp.task('js-imperial', function () {
+    return gulp.src('./lib/imperial/form.js').
+        pipe(browser()).
+        pipe(concat('imperial-batch.js')).
+        pipe(uglify()).
+        pipe(gulp.dest('./pub/js'));
+});
+
+gulp.task('js', ['js-aurebesh', 'js-imperial']);
 gulp.task('default', ['js', 'readme.md']);

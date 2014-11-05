@@ -63,5 +63,18 @@ gulp.task('js-imperial', function () {
         pipe(gulp.dest('./pub/js'));
 });
 
+gulp.task('i18n', function () {
+    return gulp.src('./lib/i18n/index.js').
+        pipe(browser({
+            require:
+                fs.
+                readdirSync('./lib/i18n/strings').
+                filter(function (fn) { return fn.indexOf('index') === -1; }).
+                map(function (fn) { return path.join('./lib/i18n/strings', fn); })
+        })).
+        pipe(concat('i18n.js')).
+        pipe(gulp.dest('./pub/js'));
+});
+
 gulp.task('js', ['js-aurebesh', 'js-imperial']);
 gulp.task('default', ['js', 'readme.md']);

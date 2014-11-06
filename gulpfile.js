@@ -21,7 +21,7 @@ gulp.task('readme.md', function () {
             'HEADER.ejs',
             'SUMMARY.ejs',
             'USAGE.ejs',
-            // 'INSTALLATION.ejs',
+            'I18N.ejs',
             // 'DOCUMENTATION.ejs',
             // 'DEPENDENCIES.ejs',
             'ISSUES.ejs',

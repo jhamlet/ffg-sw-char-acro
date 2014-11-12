@@ -64,16 +64,16 @@ gulp.task('js-imperial', function () {
 });
 
 gulp.task('i18n', function () {
-    return gulp.src('./lib/i18n/index.js').
+    return gulp.src('./lib/illustrator/index.js').
         pipe(browser({
             require:
                 fs.
-                readdirSync('./lib/i18n/strings').
-                filter(function (fn) { return fn.indexOf('index') === -1; }).
-                map(function (fn) { return path.join('./lib/i18n/strings', fn); })
+                readdirSync('lib/i18n/strings').
+                filter(function (f) { return f.indexOf('index') === -1; }).
+                map(function (f) { return 'lib/i18n/strings/' + f; })
         })).
         pipe(concat('i18n.js')).
-        pipe(gulp.dest('./pub/js'));
+        pipe(gulp.dest('pub/js'));
 });
 
 gulp.task('js', ['js-aurebesh', 'js-imperial']);

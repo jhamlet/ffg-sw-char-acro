@@ -81,9 +81,10 @@ Usage/ Benutzungshilfe
 * Fülle den oberen Teil der Felder für jeden Rang aus, den Du bei der jeweiligen Fertigkeit
   erreicht hast (z.B. Astronavigation 2). 
 * Auf dieser Weise kannst Du schnell erkennen, wie Dein Würfelpool zusammengesetzt ist.
+  (halb gefüllt: grüner Würfel, ausgefüllt: gelber Würfel)
 
 * Alternativ kannst Du auch einen slash ("/") für die Fertigkeit (also den Rang) und einen 
-* backslash ("\") für die Eigenschaft verwenden ("X" wäre also ein gelber Würfel, "/" und
+  backslash ("\") für die Eigenschaft verwenden ("X" wäre also ein gelber Würfel, "/" und
   "\" wären grüne Würfel)
 
 
@@ -96,6 +97,16 @@ Usage/ Benutzungshilfe
   line through the relevant boxes.
 * Use the _Abilities_ section to actually summarize the individual abilities that
   come from purchasing the talents.
+
+### Talentbäume ###
+
+* Setze ein 'X' in ein Feld, sobald Du das dem Talentbaum entsprechende Talentenfeld
+  freigeschaltet (und das Talent erlernt) hast.
+* Bei Machtbäumen und anderen Baumstrukturen, bei denen ein Talent/ eine Fertigkeit
+  mehrere Zweige "freischaltet" ziehst Du einen waagerechten Strich durch die entspr.
+  Felder
+* Nutze die "Talente"-Listen, um die erlernten Fähigkeiten/ Boni/ usw. festzuhalten
+
 
 
 Internationalization (i18n)

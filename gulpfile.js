@@ -15,7 +15,7 @@ gulp.task('clobber', function (done) {
 });
 
 gulp.task('readme.md', function () {
-    var dir = 'src/tmpl/readme';
+    var dir = 'src/tmpl/readme/en';
     return gulp.
         src([
             'HEADER.ejs',
@@ -38,6 +38,33 @@ gulp.task('readme.md', function () {
         pipe(gulp.dest('./'));
 });
 CLOBBER.push('README.md');
+
+gulp.task('readme.de.md', function () {
+    var dir = 'src/tmpl/readme/de';
+    return gulp.
+        src([
+            'HEADER.ejs',
+            'SUMMARY.ejs',
+            'USAGE.ejs',
+            'I18N.ejs',
+            // 'DOCUMENTATION.ejs',
+            // 'DEPENDENCIES.ejs',
+            'ISSUES.ejs',
+            'LICENSE.ejs'
+        ].map(function (file) { return path.join(dir, file); })).
+        pipe(ejs({
+            pkg: pkgInfo,
+            license: fs.readFileSync('LICENSE', 'utf8'),
+            links: {
+                apiDoc: 'API.md'
+            }
+        })).
+        pipe(concat('README.de.md')).
+        pipe(gulp.dest('./'));
+});
+CLOBBER.push('README.de.md');
+
+gulp.task('readme', ['readme.md', 'readme.de.md']);
 
 gulp.task('readme.html', ['readme.md'], function () {
     return gulp.src('README.md').
@@ -77,4 +104,5 @@ gulp.task('i18n', function () {
 });
 
 gulp.task('js', ['js-aurebesh', 'js-imperial']);
-gulp.task('default', ['js', 'readme.md']);
+gulp.task('default', ['js', 'readme']);
+

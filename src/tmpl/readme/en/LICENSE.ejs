@@ -1,0 +1,12 @@
+License
+-------
+
+<%-
+    license.
+    split("\n").
+    filter(function (line, idx, list) {
+        return !(idx === list.length - 1 && /^\s*$/.test(line));
+    }).
+    map(function (line) { return "> " + line; }).
+    join("\n")
+%>

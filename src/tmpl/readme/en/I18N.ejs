@@ -1,0 +1,42 @@
+Internationalization (i18n)
+---------------------------
+
+In the interest of making these available to the widest possible audience, I'm
+working on a way to layout my illustrator files using JavaScript.
+
+By incorporating a simple database of strings (eg. a JavaScript file) in the
+script that lays out the page I can quickly create new versions with regionlized
+strings.
+
+### Translations
+
+The illustrator template(s) and scripts will all be available in this repository
+for your own use at some point. However, until I've finished the i18n scripts and
+documented the process to run the various scripts in Illustrator® and Acrobat®,
+it's probably easiest for others to translate database files and I generate the
+localized version.
+
+1. Fork this repository.
+
+2. In your fork, copy the existing 'en.js' file inside the
+   [lib/i18n/strings](lib/i18n/strings) directory and name it with the
+   appropriate [BCP 47](BCP47) code (find a [discussion on language tags
+   here][language-tags]).
+
+3. At the top of the file are a couple of strings that need to be changed to
+   reflect the current language, and any language that it is based on.
+
+   The first is the one right after the `new Strings(`. This one sets the
+   current language name. Use a BCP 47 code (i.e: 'fr', 'fr-CA', 'en-GB',
+   etc...).
+
+   The second is the commented out `base: 'en'` line. Un-comment that line.
+   Unless you are creating a more regionalized version of the strings ('fr-CA',
+   from 'fr') leave it as 'en', otherwise set it to the more generic language code.
+
+4. When you are ready, issue a pull request for me to incorporate your changes.
+
+5. Given my schedule, I will post the resulting PDFs as soon as I can.
+
+[language-tags]: http://www.w3.org/International/questions/qa-choosing-language-tags
+[BCP47]: https://tools.ietf.org/html/bcp47

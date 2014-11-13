@@ -3,18 +3,11 @@ FFG Star Wars Character for Acrobat
 
 > Custom, form-fillable, character sheets for the Star Wars Roleplaying games.
 
-Vorwort zur deutschen Fassung
------------------------------
+Summary
+-------
 
-Der Autor und Ersteller der englischen Orginalfassung der Charakterbögen ist Jerry Hamlet, ihm
-gebührt Dank und Anerkennung.
-
-
-Summary/ Allgemeines
---------------------
 Character sheets for **Edge of the Empire**, **Age of Rebellion**, and **Force
 and Destiny**. 
-(Charakterbögen für "Am Rand des Imperiums", "Zeitalter der Rebellion" und "Force and Destiny")
 
 ![EotE Gray Front](./pub/img/aurebesh-eote-g-front.png)
 ![AoR Gray Front](./pub/img/aurebesh-aor-g-front.png)
@@ -31,47 +24,27 @@ And now, **form fillable** in [Adobe Reader][reader].
 Get the goodies in the [pub](./pub) directory (_form fillable versions have a
 '-ff' at the end of the filename_).
 
-### Caveats/ Sicherheitshinweise
+### Caveats 
 
-> I highly recommend using the latest version of [Adobe Reader][reader] with
-> these.  Although they can be used with other PDF readers, I can not guarantee
-> that they will appear as intended, or save the form field data in the correct
-> way.
-(Der Autor empfiehlt ausdrücklich, die aktuellste Version des Adobe Readers zu
-verwenden. Obwohl die Dateien auch mit anderen Readern geöffnet werden könnten,
-kann nicht garantiert werden, dass alle Felder korrekt angezeigt oder
-aber die Textfelder korrekt editierbar sein werden.)
+> Der Autor empfiehlt ausdrücklich, die aktuellste Version des Adobe Readers zu
+> verwenden. Obwohl die Dateien auch mit anderen Readern geöffnet werden könnten,
+> kann nicht garantiert werden, dass alle Felder korrekt angezeigt oder
+> aber die Textfelder korrekt editierbar sein werden.
 
-I only used form fields.
-(Der Autor verwendet ausschließlich Textfelder.)
+> Der Autor verwendet ausschließlich Textfelder.
 
-There is no interactiveness to these.
-(Die Felder sind nicht interaktiv.)
+> Die Felder sind nicht interaktiv.
 
-This was in an effort to make these as wildly useful as possible.
-(Dies ist der Versuch, eine möglichst flexible Handhabung zu
-gewährleisten.)
+> Dies ist der Versuch, eine möglichst flexible Handhabung zu gewährleisten.
 
 [reader]: http://get.adobe.com/reader/ "Adode Reader"
 
-Usage/ Benutzungshilfe
-----------------------
+Usage
+-----
 
 ### Skills ###
 
 ![Skills Usage](./pub/img/skill-usage.png)
-
-* Fill in the circle if it is a _career_ skill.
-* Fill the bottom triangle of the _pool_ box for each rank of a
-  characteristic you have for that skill
-* Fill in the top part when you get a rank.
-* This way you can read it as 'filled', 'filled', 'half' equals
-  'proficiency', 'proficiency', 'ability' (or for the color obsessed 'yellow',
-  'yellow', 'green').
-* _Alternatively_ you can use a slash for ability, and an opposite slash (which
-  makes an 'X') to indicate ability/proficiency.
-
-### Fertigkeiten ###
 
 * Fülle das Listensymbol (Kreis) aus, wenn die Fertigkeit eine
   Berufsfertigkeit darstellt.
@@ -87,18 +60,9 @@ Usage/ Benutzungshilfe
   backslash ("/") für die Eigenschaft verwenden ("X" wäre also ein gelber Würfel, "/" und
   "\" wären grüne Würfel)
 
-
-### Development Trees ###
+### Talentbäume ###
 
 ![Development Tree Usage](./pub/img/development-tree-usage.png)
-
-* Put an 'X' in the box if you have purchased that column/row of the tree.
-* For powers, and other trees where an ability spans multiple columns, put a
-  line through the relevant boxes.
-* Use the _Abilities_ section to actually summarize the individual abilities that
-  come from purchasing the talents.
-
-### Talentbäume ###
 
 * Setze ein 'X' in ein Feld, sobald Du das dem Talentbaum entsprechende Talentenfeld
   freigeschaltet (und das Talent erlernt) hast.
@@ -106,7 +70,6 @@ Usage/ Benutzungshilfe
   mehrere Zweige "freischaltet" ziehst Du einen waagerechten Strich durch die entspr.
   Felder
 * Nutze die "Talente"-Listen, um die erlernten Fähigkeiten/ Boni/ usw. festzuhalten
-
 
 
 Internationalization (i18n)

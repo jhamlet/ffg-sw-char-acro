@@ -83,8 +83,8 @@ Usage/ Benutzungshilfe
 * Auf dieser Weise kannst Du schnell erkennen, wie Dein Würfelpool zusammengesetzt ist.
   (halb gefüllt: grüner Würfel, ausgefüllt: gelber Würfel)
 
-* Alternativ kannst Du auch einen slash ("/") für die Fertigkeit (also den Rang) und einen 
-  backslash ("\") für die Eigenschaft verwenden ("X" wäre also ein gelber Würfel, "/" und
+* Alternativ kannst Du auch einen slash ("\") für die Fertigkeit (also den Rang) und einen 
+  backslash ("/") für die Eigenschaft verwenden ("X" wäre also ein gelber Würfel, "/" und
   "\" wären grüne Würfel)
 
 

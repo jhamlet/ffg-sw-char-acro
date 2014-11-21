@@ -69,7 +69,7 @@ Benutzungshilfe
 * Bei Machtbäumen und anderen Baumstrukturen, bei denen ein Talent/ eine Fertigkeit
   mehrere Zweige "freischaltet" ziehst Du einen waagerechten Strich durch die entspr.
   Felder
-* Nutze die "Talente"-Listen, um die erlernten Fähigkeiten/ Boni/ usw. festzuhalten
+* Nutze die "Fähigkeiten"-Listen, um die erlernten Fähigkeiten/ Boni/ usw. festzuhalten
 
 
 Internationalization (i18n)
